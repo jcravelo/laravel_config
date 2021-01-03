@@ -1,0 +1,24 @@
+Como intalar una version especifica de laravel en mi servicio:
+-----------------------------------------------------------------------------------------------------
+https://maxiblammo.wordpress.com/2017/05/03/larval-tips-como-instalar-versiones-anteriores-de-larval/
+
+Instalar una versión especifica de Laravel:
+composer create–project laravel/laravel MiProyecto 5.3.*
+
+o podemos escribirlo así
+composer create–project laravel/laravel=5.3.* MiProyecto
+
+Instalar la ultima versión de Laravel:
+composer create–project laravel/laravel MiProyecto
+-----------------------------------------------------------------------------------------------------
+Como intalar una version especifica de composer en mi servicio:
+-----------------------------------------------------------------------------------------------------
+https://tecnonucleous.com/2020/06/30/como-instalar-varias-versiones-de-composer-en-windows-y-linux/
+https://getcomposer.org/download/
+
+Copiamos el archivo composer.phar que nos acabamos de descargar y lo pegamos en la carpeta que creamos previamente (en mi caso "composer2").
+Una vez realizado esto abrimos la terminal y indicamos la ruta de nuestra carpeta donde tenemos el composer.phar. En mi caso en "C://composer2", me situo en ese directorio escribiendo en la terminal cd C://composer2 y después ejecutamos el siguiente comando dependiendo del tipo de terminal que estemos usando:
+
+echo @php "%~dp0composer.phar" %*>composer2.bat
+
+Agregamos composer2 al path y reiniciamos el cmd. Listo.
